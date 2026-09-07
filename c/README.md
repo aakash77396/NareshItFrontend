@@ -51,9 +51,73 @@ Types:  (1) Primitive Datatypes : byte, short, int, long, float, double, char, b
 - Can we do both(variable declaration and intitialization) in single line? - Yes, int a = 100;
 - variable name follow camel casing.
 
-``` #include<stdio.h>
+```text #include<stdio.h>
     void main(){
         int a =100;
         printf("A = %d", a);
     }
+```
+
+### How to store and print double value in a variable:
+
+```text
+#include<Stdio.h>
+void main(){
+    double height = 5.8;
+    printf("My height = %.2lf",height);
+}
+
+```
+
+### How to store and print float value in a variable:
+
+```text
+#include<Stdio.h>
+void main(){
+    float height = 5.8f;
+    printf("My height = %.2f",height);
+}
+
+```
+
+### How to store and print char value in a variable:
+
+```text
+#include<Stdio.h>
+void main(){
+    char grade = 'A';
+    printf("My 10th class grade = %c",grade);
+}
+
+```
+
+### How to store and print String value in a variable:
+
+```text
+#include<Stdio.h>
+void main(){
+    char name[30] = "Aakash";
+    printf("My name is: %s",name);
+}
+
+```
+### How to read data from user during running the program.
+- printf() -> is used to print the data.
+- scanf()  -> is used to read data from user.
+
+```text
+- WAPTP sum of two integers. read two integers from user.
+
+#include<Stdio.h>
+void main(){
+    int a,b;
+    printf("Enter first number: ");
+    scanf("%d",&a);
+
+    printf("Enter second number: ");
+    scanf("%d",&b);
+
+    printf("Sum = %d ",a+b);    
+}
+
 ```
