@@ -120,4 +120,44 @@ void main(){
     printf("Sum = %d ",a+b);    
 }
 
+- WAPTP Intrest of princple Amount
+#include<stdio.h>
+void main(){
+    double p,r,t;
+    printf("Enter principle amount:");
+    scanf("%lf",&p);
+    printf("Enter rate of intrest:");
+    scanf("%lf",&r);
+    printf("Enter time period in years:");
+    scanf("%lf",&t);
+
+    double intrest = (p*t*r)/100;
+    printf("Principle Amount = %.2lf\n",p);
+    printf("Intrest Amount = %.2lf\n",intrest);
+    printf("Total Amount = %.2lf\n", p + intrest);
+}
+
 ```
+### Control statement
+```text
+- These are the pre-defined statements used to control the execution flow of a program.
+    - decision making statements/conditional statements
+    1: if
+    2: if-else
+    3: if-else-if / if-else-ladder
+    4: switch
+
+    - looping statements
+    1: for loop
+    2: while loop
+    3: do-while loop
+
+    - jumping statements
+    1: break
+    2: continue
+
+    ```
+
+
+
+
