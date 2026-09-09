@@ -7,11 +7,20 @@ void main(){
 
     printf("Enter Amount of product: ");
     scanf("%lf",&price);
-    printf("Enter Discount Percentage on product: ");
-    scanf("%lf",&discountPercentage);
-    printf("======================================\n");
+    // printf("Enter Discount Percentage on product: ");
+    // scanf("%lf",&discountPercentage);
+    // printf("======================================\n");
 
-    printf("You saved Amount! %.2lf\n",(price*discountPercentage/100));
-    printf("Paid Amount! %.2lf\n", price - (price*discountPercentage/100));
+    if(price>=500){
+        discountPercentage =20;
+        printf("You saved Amount! %.2lf\n",(price*discountPercentage/100));
+        printf("Paid Amount! %.2lf\n", price - (price*discountPercentage/100));
+    }else{
+        discountPercentage =10;
+        printf("You saved Amount! %.2lf\n",(price*discountPercentage/100));
+        printf("Paid Amount! %.2lf\n", price - (price*discountPercentage/100));
+    }
+
+    
 
 }

@@ -142,8 +142,8 @@ void main(){
 ```text
 - These are the pre-defined statements used to control the execution flow of a program.
     - decision making statements/conditional statements
-    1: if
-    2: if-else
+    1: if                                       if(condition:true){...}
+    2: if-else                                  if(condition:true){...}else{condition:false}
     3: if-else-if / if-else-ladder
     4: switch
 
