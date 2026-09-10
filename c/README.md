@@ -144,7 +144,8 @@ void main(){
     - decision making statements/conditional statements
     1: if                                       if(condition:true){...}
     2: if-else                                  if(condition:true){...}else{condition:false}
-    3: if-else-if / if-else-ladder
+    3: if-else-if / if-else-ladder              if(condition:true){...}else if(condition:true){...}
+                                                else{condition:false}
     4: switch
 
     - looping statements
