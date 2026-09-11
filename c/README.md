@@ -138,6 +138,8 @@ void main(){
 }
 
 ```
+--- 
+
 ### Control statement
 ```text
 - These are the pre-defined statements used to control the execution flow of a program.
@@ -146,7 +148,15 @@ void main(){
     2: if-else                                  if(condition:true){...}else{condition:false}
     3: if-else-if / if-else-ladder              if(condition:true){...}else if(condition:true){...}
                                                 else{condition:false}
-    4: switch
+    4: switch                                   switch(expresition){ case 1: printf( " " );
+                                                                      case 2: printf{...}};
+                                                                      default: printf{...};
+    - if no any break then executes all next cases including default;
+    - if you have multiple line of codes in case, then you can use blocks. case 1: {...}
+    - case values may be int,char or String
+    - case values cannot be decimal point & boolean values
+    - all the case values must be of the same data type.
+    - 
 
     - looping statements
     1: for loop
