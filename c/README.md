@@ -167,8 +167,24 @@ void main(){
     1: break
     2: continue
 
-    ```
+```
+---
+### Loops
+- Loop - loop is a pre defined statements used to execute same set of lines repeatedly.
 
+```text
+- for loop:
+    syntax:
+    for(variable declaration & initialization; condtion; update){...}
+
+   case 1: if no i++ or i-- and first condition is satisfied then loop will be infinite
+   case 2: if first condition will fail then not entered in for loop inside.
+   case 3: if no condition(like i<n) then loop will infinite
+   case 4: condition is boolean value true then loop will infinite
+   case 5: condition is boolean value false then loop will not exexute
+
+
+``` 
 
 
 
