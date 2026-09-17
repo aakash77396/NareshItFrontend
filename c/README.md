@@ -183,6 +183,10 @@ void main(){
    case 4: condition is boolean value true then loop will infinite
    case 5: condition is boolean value false then loop will not exexute
 
+- while loop:
+    syntax:
+    initisalised int i=0;
+    while(condition i<n){.... update i++}
 
 ``` 
 ### perfect number
