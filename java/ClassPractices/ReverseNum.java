@@ -1,15 +1,16 @@
-
+package ClassPractices;
 import java.util.Scanner;
 
-public class Count {
-
+public class ReverseNum {
+    
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter num:");
         int num = sc.nextInt();
-        for(int i=1;i<=10;i++){
-            System.out.println(num + " * " + i + " = " + num*i);
+        for(int i=num;i>=1;i--){
+            System.out.println(i);
         }
     }
 }
+

@@ -1,15 +1,14 @@
+package ClassPractices;
 import java.util.Scanner;
 
-public class ReverseNum {
-    
+public class PrevMul {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter num:");
         int num = sc.nextInt();
-        for(int i=num;i>=1;i--){
-            System.out.println(i);
-        }
+
+        int rem = num %100;
+        System.out.println(num -rem);
     }
 }
-

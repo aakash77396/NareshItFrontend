@@ -1,3 +1,4 @@
+package ClassPractices;
 import java.util.Scanner;
 
 public class Electric {
