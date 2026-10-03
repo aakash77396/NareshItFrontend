@@ -8,5 +8,9 @@
   "keywords": [],
   "author": "Aakash",
   "license": "ISC",
-  "description": "Hey! this is my first day to learn frontend in naresh IT"
+  "description": "Hey! this is my first day to learn frontend in naresh IT",
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "bootstrap-icons": "^1.13.1"
+  }
 }
