@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            background-image: url("./img/banner.jpg");
+            background-size: cover;
+        }
+        .shade{
+            height: 1200px;
+            background-color: rgba(0,0,0,0.7);
+            color: white;
+        }
+
+        header{
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            padding: 40px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand-title{
+            font-size: 50px;
+            font-weight: bold;
+            color: red;
+            text-shadow: 1px 1px 1px white;
+        }
+        .language{
+            border: 1px solid gray;
+            padding: 5px;
+            width: 140px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            background-color: rgba(0,0,0,0.6);
+            border-radius: 5px;
+        }
+
+        .btn-signin{
+            width: 100px;
+            background-color: red;
+            color: white;
+            padding: 6px;
+            border-radius: 5px;
+            text-align: center;
+            margin-left: 10px;
+        }
+
+        .shortcuts{
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        article{
+            text-align: center;
+            color: white;
+            margin-top: 100px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .article-title{
+            font-size: 50px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .article-subtitle{
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        main{
+            margin-top: 20px;  
+        }
+
+        .main-title{
+            margin-bottom: 10px;
+        }
+
+        .email{
+            border:1px solid rgb(193,192,192);
+            padding: 15px;
+            width: 300px;
+            text-align: left;
+            background-color: rgba(0,0,0,0.6);
+        }
+
+        .btn-start{
+            background-color: red;
+            color: white;
+            padding: 15px;
+            width: 150px;
+            margin-left: 10px;
+        }
+        .form{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+       
+        .section-title{
+            font-size: 24px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 10px;
+        }
+
+        .reasons-to-join{
+            margin-top: 40px;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+        .reasons-container .card{
+            width: 250px;
+            height: 300px;
+            border: 1px solid rgb(86, 85, 85);
+            border-radius: 20px;
+            background-image: linear-gradient(#1B1A35,#43204f);
+            color: white;
+            margin: 10px;
+            padding: 20px;
+        }
+
+        .reasons-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .card-title{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .card-text{
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 20px;
+            font-size: 14px;
+            color: rgb(211, 211, 211);
+            line-height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="shade">
+        <header>
+            <div>
+                <span class="brand-title">Netflix</span>
+            </div>
+            <div class="shortcuts">
+                <div class="language">
+                    <span class="bi bi-translate">English</span>
+                    <span class="bi bi-caret-down-fill"></span>
+                </div>
+                <div class="btn-signin">
+                    Sign In
+                </div>
+            </div>
+        </header>
+
+        <article>
+            <div class="article-title">Entertainment for <br> every moment</div>
+            <div class="article-subtitle">Starts at &#8377;149. Cancel at any time.</div>
+            <main>
+                <div class="main-title">Ready to watch? Enter your email to create or restart your membership.</div>
+                <div class="form">
+                    <div class="email">Email Address</div>
+                    <div class="btn-start">
+                        <span>Get Started</span>
+                        <span class="bi bi-chevron-right"></span>
+                    </div>
+                </div>
+            </main>
+        </article>
+
+        <!--
+        <section class="trending-now">
+            <span class="section-tile">Trending Now</span>
+
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+        </section>
+        -->
+        <section class="reasons-to-join">
+            <div class="section-title">More reasons to join</div>
+            <div class="reasons-container">
+                <div class="card">
+                    <div class="card-title">Enjoy on your TV</div>
+                    <div class="card-text">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</div>
+                </div>
+                <div class="card">
+                    <div class="card-title">Download your shows to watch offline</div>
+                    <div class="card-text">Save your favourites easily and always have something to watch.</div>
+                </div>
+                <div class="card">
+                    <div class="card-title">Watch everywhere</div>
+                    <div class="card-text">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</div>
+                </div>
+                <div class="card">
+                    <div class="card-title">Create profiles for kids</div>
+                    <div class="card-text">Send kids on adventures with their favourite characters in a space made just for them — free with your membership.</div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
