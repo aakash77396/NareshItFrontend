@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RescueHub</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            height: 150px;
+            background-color: #B71C1C;
+            color: white;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        header h1{
+            margin-bottom: 10px;
+            font-size: 40px;
+        }
+        header p{
+            font-size: 17px;
+        }
+        nav{
+            height: 50px;
+            background-color: #222222;
+            color: white;
+             display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            position:sticky;
+            top: 0px;
+        }
+        nav ul{
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px;
+            align-items: center;
+        }
+        nav ul li{
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .Emergency-ass{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            background-color: #FFE5E5;
+        }
+        .Emergency-ass h1{
+            margin-bottom: 20px;
+            font-size: 40px;
+        }
+        .Emergency-ass p{
+            font-size: 19px;
+            margin-bottom: 20px;
+        }
+        .Emergency-help-btn{
+            background-color: #D32F2F;
+            border-radius: 10px;
+            padding: 10px 15px;
+            font-weight: bold;
+            color: white;
+        }
+        .Emergency-Services{
+            background-color: #F5F6F8;
+            padding-top: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 50px;
+        }
+        .card-box{
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            border-radius: 10px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 15px;
+            margin-right: 35px;
+            width: 280px;
+            height: 280px;
+            box-shadow: 0.5px 0.5px 2px black;
+            background-color: #FFFFFF;
+
+        }
+        .card-24-7{
+            background-color: #D32F2F;
+            padding: 5px 10px;
+            color: white;
+            border-radius: 15px;
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 13px;
+        }
+        .icon{
+            font-size: 50px;
+            margin-top: 20px;
+        }
+        .card h2{
+            margin-top: 20px;
+        }
+        .card-p{
+            padding: 10px;
+            text-align: center;
+        }
+        .call{
+            background-color: #D32F2F;
+            color: white;
+            padding: 10px 20px;
+            font-weight: bold;
+            border-radius: 10px;
+            margin-top: 15px;
+            font-size: 13px;
+        }
+        .Emergency-Contacts{
+            background-color: #FFF3E0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 0px;
+
+        }
+        .Emergency-Contacts-dis{
+            margin-top: 15px;
+            background-color: #fff;
+            padding: 35px 25px;
+            width: 400px;
+            border-radius: 10px;
+        }
+        .Emergency-Contacts-dis p{
+            padding:10px;
+            border-bottom: 1px solid rgba(128, 128, 128, 0.482);
+        }
+        footer{
+            background-color: #222222;
+            height: 70px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            position: relative;
+        }
+        .SOS{
+            position: absolute;
+            top: -30px;
+            right: 30px;
+            background-color: #D32F2F;
+            color: white;
+          font-weight: bold;
+            font-size: 15px;
+            padding: 30px 15px;
+            border-radius: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>RescueHub</h1>
+        <p>Emergency Assistance at Your Fingertips</p>
+    </header>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Emergency</li>
+            <li>Hospitals</li>
+            <li>Contacts</li>
+        </ul>
+    </nav>
+    <section class="Emergency-ass">
+        <h1>Emergency Assistance</h1>
+        <p>Stay calm. Get the right help at the right time.</p>
+        <p class="Emergency-help-btn"><small>Get Emergency Help</small></p>
+    </section>
+
+    <section class="Emergency-Services">
+        <h1>Emergency Services</h1>
+        <div class="card-box">
+            <div class="card">
+                <span class="card-24-7">24/7</span>
+                <p class="icon">🚑</p>
+                <h2>Ambulance</h2>
+                <p class="card-p">Get immediate medical <br> transportation.</p>
+                <div class="call">Call Ambulance</div>
+            </div>
+            <div class="card">
+                <span class="card-24-7">URGENT</span>
+                <p class="icon">🚓</p>
+                <h2>Police</h2>
+                <p class="card-p">Contact the police for immediate <br> safety and security assistance.</p>
+                <div class="call">Contact Police</div>
+            </div>
+            <div class="card">
+                <span class="card-24-7">AVAILABLE</span>
+                <p class="icon">🚒</p>
+                <h2>Fire Service</h2>
+                <p class="card-p">Get quick assistance during fire <br> and rescue emergencies.</p>
+                <div class="call">Call Fire Service</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="Emergency-Contacts">
+        <h2>📞 Emergency Contacts</h2>
+        <div class="Emergency-Contacts-dis">
+            <p>🚓 Police: <b>100</b></p>
+            <p>🚑 Ambulance: <b>108</b></p>
+            <p>🚒 Fire Service: <b>101</b></p>
+            <p>🆘 Emergency: <b>112</b></p>
+        </div>
+    </section>
+    <footer>
+        <div class="SOS">🚨 SOS</div>
+        <p>© 2026 RescueHub | Emergency Assistance</p>
+    </footer>
+</body>
+</html>
