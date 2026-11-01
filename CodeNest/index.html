@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CodeNest</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: #F5F6F8;
+        }
+        nav{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 30px;
+            background-color: #1E293B;
+            color: white;
+        }
+        nav h1{
+            font-size: 35px;
+        }
+        nav p{
+            padding: 15px 0px;
+            font-size: 18px;
+        }
+        nav ul{
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            padding-bottom: 15px;
+        }
+        nav ul li{
+            padding: 15px 15px;
+        }
+        nav ul li a{
+            color: white;
+            text-decoration: none;
+        }
+        .welcome,
+        .about{
+            padding: 10px 20px;
+            border: 1px solid rgba(128, 128, 128, 0.385);
+            margin: 30px 80px;
+            border-radius:10px;
+            background-color: #FFFFFF;
+        }
+        .welcome h1,
+        .about h1{
+            padding: 20px 0px;
+        }
+        .welcome p,
+        .about p{
+            padding: 10px 0px;
+        }
+        .welcome h4,
+        .about h4{
+            padding: 10px 0px;
+            padding-bottom: 25px;
+        }
+        .welcome h4 a,
+        .about h4 a{
+            text-decoration: none;
+            color: #2663EB;
+        }
+        .html,
+        .css,
+        .javascript,
+        .resources{
+            background-color: #FFFFFF;
+            padding: 10px 20px;
+            margin: 30px 80px;
+            border-radius: 10px;
+            border: 1px solid rgba(128, 128, 128, 0.385);
+        }
+        .html h1,
+        .css h1,
+        .javascript h1,
+        .resources h1{
+            padding: 20px 0px;
+        }
+
+        .html p,
+        .css p,
+        .javascript p,
+        .resources p{
+            padding: 10px 0px;
+        }
+
+        .card {
+            background-color: #F9FAFC;
+            margin: 15px 25px;
+            border: 1px solid rgba(128, 128, 128, 0.31);
+            border-radius: 10px;
+            padding: 15px 15px;
+        }
+        .card h3{
+            padding: 10px 0px;
+        }
+        .card p{
+            padding: 10px 0px;
+        }
+        .card h4{
+            padding: 10px 0px;
+        }
+        .card h4 a{
+            text-decoration: none;
+            color: #2663EB;
+        }
+        .html h4,
+        .css h4,
+        .javascript h4,
+        .resources h4{
+            padding: 15px 0px;
+        }
+        .html h4 a,
+        .css h4 a,
+        .javascript h4 a,
+        .resources h4 a{
+            text-decoration: none;
+            color: #2663EB;
+        }
+
+        footer{
+            background-color: #1E293B;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        footer h1{
+            padding: 15px 0px;
+        }
+        footer p{
+            padding: 10px 0px;
+        }
+        footer .course,
+        footer .links{
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+        }
+        footer .course li,
+        .footer .links li{
+            padding: 15px 10px;
+        }
+        footer .course li a,
+        footer .links li a{
+            text-decoration: none;
+            color: #2689eb;
+        }
+        footer .links li{
+            padding: 0px 10px;
+            border-right: 1.5px solid white;
+        }
+        footer .copyright{
+            padding-bottom: 35px;
+        }
+    </style>
+</head>
+<body id="home">
+    <nav>
+        <h1>🚀 CodeNest</h1>
+        <p>Your Home for Developer Resources</p>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="html">HTML</a></li>
+            <li><a href="css">CSS</a></li>
+            <li><a href="javascript">JavaScript</a></li>
+            <li><a href="javascript">Resources</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="welcome" >
+            <h1>Welcome to CodeNest 👋</h1>
+            <p>Learn Web Development using simple and practical resources.</p>
+            <p>Choose a technology below and start learning.</p>
+            <h4><a href="#html">Start Learning HTML</a></h4>
+        </section>
+        <section class="about" id="about">
+            <h1>About CodeNest</h1>
+            <p>CodeNest is a simple resource hub for students who are learning web development.</p>
+            <p>Explore HTML, CSS and JavaScript resources from one place.</p>
+            <h4><a href="#home">Back to Top</a></h4>
+        </section>
+
+        <!-- html -->
+        <section class="html" id="html">
+            <h1>🌐 HTML</h1>
+            <p>HTML is used to create the structure of web pages.</p>
+            <section class="card">
+                <h3>HTML Basics</h3>
+                <p>Learn HTML elements, headings, paragraphs, links, images, tables and forms.</p>
+                <h4><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">Learn HTML on MDN</a></h4>
+            </section>
+            <section class="card">
+                <h3>HTML Tutorials</h3>
+                <p>Learn HTML step by step with examples.</p>
+                <h4><a href="https://www.w3schools.com/html/">Visit W3Schools</a></h4>
+            </section>
+            <h4><a href="#css">Next: Learn CSS</a></h4>
+            <h4><a href="#home">Back to Top</a></h4>
+        </section>
+
+        <!-- css -->
+        <section class="css" id="css">
+            <h1>🎨 CSS</h1>
+            <p>CSS is used to style and design web pages.</p>
+            <section class="card">
+                <h3>CSS Basics</h3>
+                <p>Learn colors, fonts, backgrounds, borders, spacing and layouts.</p>
+                <h4><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">Learn CSS on MDN</a></h4>
+            </section>
+            <section class="card">
+                <h3>CSS Tutorials</h3>
+                <p>Learn CSS with practical examples and exercises.</p>
+                <h4><a href="https://www.w3schools.com/css/">Visit W3Schools</a></h4>
+            </section>
+            <h4><a href="#javascript">Next: Learn JavaScript</a></h4>
+            <h4><a href="#home">Back to Top</a></h4>
+        </section>
+
+        <!-- javascript -->
+        <section class="javascript" id="javascript">
+            <h1>⚡ JavaScript</h1>
+            <p>JavaScript is used to make web pages interactive and dynamic.</p>
+            <section class="card">
+                <h3>JavaScript Basics</h3>
+                <p>Learn variables, operators, conditions, loops, functions and arrays.</p>
+                <h4><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Learn JavaScript on MDN</a></h4>
+            </section>
+            <section class="card">
+                <h3>JavaScript Tutorials</h3>
+                <p>Learn JavaScript concepts with examples.</p>
+                <h4><a href="https://www.w3schools.com/js/">Visit W3Schools</a></h4>
+            </section>
+            <h4><a href="#resources">Explore More Resources</a></h4>
+            <h4><a href="#home">Back to Top</a></h4>
+        </section>
+
+        <!-- resources -->
+        <section class="resources" id="c">
+            <h1>📚 Developer Resources</h1>
+            <p>Useful websites for learning and improving your development skills.</p>
+            <section class="card">
+                <h3>MDN Web Docs</h3>
+                <p>Complete documentation for HTML, CSS and JavaScript.</p>
+                <h4><a href="https://developer.mozilla.org/en-US/">Open MDN</a></h4>
+            </section>
+            <section class="card">
+                <h3>W3Schools</h3>
+                <p>Beginner-friendly tutorials and examples.</p>
+                <h4><a href="https://www.w3schools.com/">Open W3Schools</a></h4>
+            </section>
+            <section class="card">
+                <h3>GitHub</h3>
+                <p>Explore open-source projects and developer repositories.</p>
+                <h4><a href="https://github.com/">Open GitHub</a></h4>
+            </section>
+            <h4><a href="#home">Back to Top</a></h4>
+        </section>
+    </main>
+    <footer>
+        <h1>CodeNest - Your Home for Developer Resources</h1>
+        <p>Keep Learning. Keep Building. Keep Growing. 🚀</p>
+        <ul class="course">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#html">HTML</a></li>
+            <li><a href="#css">CSS</a></li>
+            <li><a href="javascript">JavaScript</a></li>
+        </ul>
+        <ul class="links">
+            <li><a href="https://github.com/">GitHub</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/">MDN</a></li>
+            <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+        </ul>
+        <P class="copyright">© 2026 CodeNest. All Rights Reserved.</P>
+    </footer>
+</body>
+</html>

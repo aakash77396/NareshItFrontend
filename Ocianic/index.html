@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCEANIC</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #05121d;
+        }
+
+        header {
+            background-color: #05121d;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+        }
+
+        .header-title {
+            font-size: 70px;
+            padding-top: 15px;
+            padding-bottom: 5px;
+            letter-spacing: 10px;
+        }
+
+        header .title-para {
+            font-size: 20px;
+            letter-spacing: 5px;
+        }
+
+        .header-sub-title {
+            font-size: 30px;
+            padding-top: 70px;
+            padding-bottom: 15px;
+            letter-spacing: 5px;
+        }
+
+        .sub-title-para {
+            color: #9BB5C7;
+            font-weight: 300;
+            padding-bottom: 25px;
+        }
+
+        .OCEANIC-GRAND-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #0B2231;
+            display: table;
+            text-align: center;
+            border: 1px solid #1f7ba075;
+        }
+
+        .main-img {
+            width: 100%;
+            height: 350px;
+            padding: 20px 15px;
+        }
+
+        .OCEANIC-GRAND-table .title {
+            padding: 0px 30px;
+        }
+
+        .OCEANIC-GRAND-table .value {
+            padding: 10px 30px;
+            color: #8EE5FE;
+            font-size: 20px;
+        }
+
+        .table-title {
+            color: #F5C76B;
+            font-size: 27px;
+            font-weight: 400;
+        }
+
+        .grand-route-title,
+        .drck-planner-title,
+        .cabin-title,
+        .oceanic-dining-title,
+        .onboard-experiences-title,
+        .cruise-package-title {
+            letter-spacing: 5px;
+            padding-top: 40px;
+            text-align: center;
+            color: white;
+        }
+
+        .grand-route-dis,
+        .drck-planner-dis,
+        .cabin-dis,
+        .oceanic-dining-dis,
+        .onboard-experiences-dis,
+        .cruise-package-des {
+            padding-top: 10px;
+            padding-bottom: 20px;
+            text-align: center;
+            color: #849CAD;
+        }
+
+        .grand-route-table {
+            color: white;
+            border-collapse: collapse;
+            text-align: center;
+            width: 100%;
+            background-color: #0B2231;
+            border: 1px solid #1f7ba075;
+        }
+
+        .grand-route-table th,
+        .grand-route-table td {
+            padding: 15px;
+            border: 1px solid #1f7ba075;
+        }
+
+        .grand-route-table th {
+            background-color: #174A60;
+            border: none;
+            color: #8EE7FF;
+        }
+
+        .grand-route-section {
+            padding-bottom: 50px;
+            color: white;
+        }
+
+        .drck-planner-section {
+            /* padding-bottom: 50px; */
+        }
+
+        .drck-planner-table {
+            color: white;
+            width: 100%;
+            text-align: center;
+            border-collapse: collapse;
+            background-color: #0B2231;
+            border: 1px solid #1f7ba075;
+        }
+
+        .drck-planner-table th,
+        .drck-planner-table td {
+            padding: 15px;
+            border: 1px solid #1f7ba075;
+        }
+
+        .drck-planner-table th {
+            background-color: #174A60;
+            border: none;
+            color: #8EE7FF;
+        }
+
+        .access {
+            color: #69E6A5;
+            font-size: 15px;
+        }
+        .cabin-section{
+            /* padding-bottom: 200px; */
+        }
+        .cabin-outer-table{
+            width: 100%;
+            color: white;
+            border-collapse: collapse;
+            background-color: #0B2231;
+            border: 1px solid #1f7ba075;
+            position: relative;
+        }
+        .cabin-outer-table img{
+            width: 100%;
+            height: 350px;
+            padding: 15px 10px;
+        }
+        .cabin-outer-table-title{
+            text-align: center;
+            color: #F5C76B;
+        }
+        .cabin-outer-table-dis{
+            text-align: center;
+            padding: 5px 0px;
+        }
+        .cabin-inside-table{
+            width: 95%;
+            border: 1px solid #1f7ba075;
+            text-align: center;
+            margin: 0px auto;
+            border-collapse: collapse;
+        }
+        .cabin-price-outer-td{
+            position: relative;
+        }
+        .cabin-outer-table-price{
+            color: #F5C76B;
+            position: absolute;
+            bottom: 0px;
+            border-top: 1px solid #1f7ba075;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+        }
+        .cabin-inside-table th,
+        .cabin-inside-table td{
+            padding: 10px;
+            background: #071923;
+        }
+        
+        .cabin-inside-table th{
+            background: #123C52;
+            color: #8EE7FF;
+            border: none;
+        }
+        .oceanic-dining-table{
+            color: white;
+            border-collapse: collapse;
+            width: 100%;
+            text-align: center;
+            background-color: #0B2231;
+            border: 1px solid #1f7ba075;
+        }
+        .oceanic-dining-table th{
+            background-color: #123C52;
+            padding: 15px;
+            color: #8EE7FF;
+        }
+        .oceanic-dining-table td{
+            padding: 15px;
+            text-align: center;
+        }
+        .oceanic-dining-section{
+            /* padding-bottom: 200px; */
+        }
+        #oceanic-inner-dining-table{
+            background-color: #071923;
+            padding: 5px;
+        }
+        .onboard-experiences-table{
+            color: white;
+            text-align: center;
+            width: 100%;
+            background-color: #0B2231;
+            border-collapse: collapse;
+            border: 1px solid #1f7ba075;
+
+
+        }
+        .onboard-experiences-table-heading{
+            color: white;
+            text-align: center;
+            padding: 15px;
+            color: #F5C76B;
+        }
+        .onboard-experiences-table td img{
+            width: 150px;
+            height: 100px;
+            padding-top: 15px;
+        }
+        .onboard-img-title{
+            color: #F5C76B;
+            padding: 3px;
+        }
+        .onboard-experiences-table td p{
+            padding-bottom: 10px;
+        }
+        .cruise-package-section{
+            color: white;
+            padding-bottom: 70px;
+        }
+        .cruise-package-table{
+            color: white;
+            border-collapse: collapse;
+            width: 100%;
+            border: 1px solid #1f7ba075;
+        }
+        .cruise-package-table th,
+        .cruise-package-table td{
+            padding: 15px;
+            text-align: center;
+        }
+
+        .cruise-package-table th{
+            background-color: #123C52;
+            color: #8EE7FF;
+            border: none;
+        }
+        .cruise-package-table td{
+            background-color: #0B2231;
+        }
+        #cruise-offer{
+            background-color: #173D31;
+            color: #69E6A5;
+            padding: 20px 0px;
+        }
+        footer{
+            background-color: #040B13;
+            padding: 30px 0px;
+            color: white;
+            text-align: center;
+            color: #8FA8B5;
+        }
+        footer h1{
+            padding: 5px 0px;
+        }
+        footer p{
+            padding: 5px 0px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="header-title">OCEANIC</h1>
+        <p class="title-para"> LUXURY BEYOND THE HORIZON <br> 🌊 Mediterranean Grand Voyage</p>
+        <h1 class="header-sub-title">🛳️ SHIP OVERVIEW</h1>
+        <p class="sub-title-para"> Discover the Oceanic Grand </p>
+
+        <table class="OCEANIC-GRAND-table" border="1" cellspacing="0">
+            <tr>
+                <td rowspan="6">
+                    <img class="main-img" src="./img/titanic.jpg" alt="">
+                </td>
+                <td class="title"><span class="table-title">OCEANIC GRAND</span></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <strong class="title">Capacity</strong> <br> <span class="value">2,400 Guests</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong class="title">Crew</strong> <br> <span class="value">850 Crew Members</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong class="title">Decks</strong> <br> <span class="value">12 Luxury Decks</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong class="title">Ship Length</strong> <br> <span class="value">290 Meters</span>
+                </td>
+            </tr>
+        </table>
+    </header>
+
+    <main>
+        <section class="grand-route-section">
+            <h1 class="grand-route-title">🌍 GRAND VOYAGE ROUTE</h1>
+            <p class="grand-route-dis">10 Nights across the Mediterranean</p>
+
+            <table frame="void" border="1" cellspacing="0" class="grand-route-table">
+                <tbody>
+                    <tr>
+                        <th>Day</th>
+                        <th>Destination</th>
+                        <th>Arrival</th>
+                        <th>Departure</th>
+                        <th>Activity</th>
+                    </tr>
+                    <tr>
+                        <td>DAY 01</td>
+                        <td>🇮🇹 Venice</td>
+                        <td>—</td>
+                        <td>08:00 PM</td>
+                        <td>Departure</td>
+                    </tr>
+                    <tr>
+                        <td>DAY 02</td>
+                        <td>🌊 At Sea</td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td>Onboard Activities</td>
+                    </tr>
+                    <tr>
+                        <td>DAY 03</td>
+                        <td>🇬🇷 Santorini</td>
+                        <td>07:00 AM</td>
+                        <td>06:00 PM</td>
+                        <td>Island Tour</td>
+                    </tr>
+                    <tr>
+                        <td>DAY 04</td>
+                        <td>GR Athens</td>
+                        <td>08:00 AM</td>
+                        <td>08:00 PM</td>
+                        <td>City Exploration</td>
+                    </tr>
+                    <tr>
+                        <td>DAY 05</td>
+                        <td>🇹🇷 Istanbul</td>
+                        <td>09:00 AM</td>
+                        <td>09:00 PM</td>
+                        <td>Historical Tour</td>
+                    </tr>
+                    <tr>
+                        <td>DAY 06</td>
+                        <td>🌊 At Sea</td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td>Luxury Day</td>
+                    </tr>
+                    <tr>
+                        <td>DAY 07</td>
+                        <td>🇮🇹 Rome</td>
+                        <td>08:00 AM</td>
+                        <td>07:00 PM</td>
+                        <td>Rome Experience</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="drck-planner-section">
+            <h1 class="drck-planner-title">🛳️ DECK PLANNER</h1>
+            <p class="drck-planner-dis">Explore the world inside Oceanic</p>
+            <table border="1" cellspacing="0" frame="void" class="drck-planner-table">
+                <tbody>
+                    <tr>
+                        <th>Deck</th>
+                        <th>Category</th>
+                        <th>Facilities</th>
+                        <th>Access</th>
+                    </tr>
+                    <tr>
+                        <td>DECK 12</td>
+                        <td>12 🌟 Sky Deck</td>
+                        <td>Observatory + Lounge + Sky Bar</td>
+                        <td class="access">Guests</td>
+                    </tr>
+                    <tr>
+                        <td>DECK 11</td>
+                        <td>🏊 Recreation</td>
+                        <td>Infinity Pool + Pool Bar</td>
+                        <td class="access">Guests</td>
+                    </tr>
+                    <tr>
+                        <td>DECK 10</td>
+                        <td>🍽️ Dining</td>
+                        <td>Restaurants + Café</td>
+                        <td class="access">Guests</td>
+                    </tr>
+                    <tr>
+                        <td>DECK 09</td>
+                        <td>🛏️ Premium</td>
+                        <td>Luxury Suites</td>
+                        <td class="access">Guests</td>
+                    </tr>
+                    <tr>
+                        <td>DECK 08</td>
+                        <td>🛏️ Cabins</td>
+                        <td>Ocean View Cabins</td>
+                        <td class="access">Guests</td>
+                    </tr>
+                    <tr>
+                        <td>DECK 07</td>
+                        <td>🎭 Entertainment</td>
+                        <td>Grand Theater + Cinema</td>
+                        <td class="access">Guests</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="cabin-section">
+            <h1 class="cabin-title">🛏️ CABIN COLLECTION</h1>
+            <p class="cabin-dis">Choose your perfect ocean view</p>
+            <table border="1" cellspacing="0" class="cabin-outer-table">
+                <tr>
+                    <td>
+                        <img src="./img/Room.jpg" alt="">
+                    </td>
+                    <td class="cabin-price-outer-td">
+                        <h2 class="cabin-outer-table-title">🌊 OCEAN VIEW SUITE</h2>
+                        <p class="cabin-outer-table-dis">Wake up to a beautiful view of the Mediterranean Sea.</p>
+                        <table border="1" cellspacing="0" frame="void" class="cabin-inside-table">
+                            <tbody>
+                                <tr>
+                                    <th>Bed</th>
+                                    <th>View</th>
+                                    <th>Capacity</th>
+                                    <th>Extras</th>
+                                </tr>
+                                <tr>
+                                    <td>King Bed</td>
+                                    <td>Ocean View</td>
+                                    <td>2 Guests</td>
+                                    <td>Balcony</td>
+                                </tr>
+                                <tr>
+                                    <td>Breakfast</td>
+                                    <td>WiFi</td>
+                                    <td>Mini Bar</td>
+                                    <td>Room Service</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h3 class="cabin-outer-table-price">₹18,500 / Night</h3>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section class="oceanic-dining-section">
+            <h1 class="oceanic-dining-title">🍽️ OCEANIC DINING</h1>
+            <p class="oceanic-dining-dis">Taste the world while sailing across it</p>
+            <table border="1" cellspacing="0" class="oceanic-dining-table">
+                <tbody>
+                    <tr>
+                        <th>Restaurant</th>
+                        <th>Cuisine</th>
+                        <th>Deck</th>
+                        <th>Experience</th>
+                    </tr>
+                    <tr>
+                        <td>🌊 Azure</td>
+                        <td>Mediterranean</td>
+                        <td>Deck 10</td>
+                        <td>
+                            <table border="1" cellspacing="0" class="oceanic-dining-table" id="oceanic-inner-dining-table">
+                                <tbody>
+                                    <tr>
+                                        <th>Speciality</th>
+                                        <th>Price</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Seafood Platter</td>
+                                        <td>₹1,200</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Italian Pasta</td>
+                                        <td>₹850</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>🔥 Ember</td>
+                        <td>International</td>
+                        <td>Deck 10</td>
+                        <td>Fine Dining</td>
+                    </tr>
+                    <tr>
+                        <td>🍣 Sakura</td>
+                        <td>Japanese</td>
+                        <td>Deck 11</td>
+                        <td>Teppanyaki</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="onboard-experiences-section">
+            <h1 class="onboard-experiences-title">✨ ONBOARD EXPERIENCES</h1>
+            <p class="onboard-experiences-dis">Every moment deserves a memory</p>
+            <table border="1" cellspacing="0" class="onboard-experiences-table">
+                <tbody>
+                    <tr>
+                        <td colspan="3">
+                            <h2 class="onboard-experiences-table-heading">✨ EXPERIENCE THE OCEANIC LIFESTYLE</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./img/oceanic_fitness.jpg" alt="">
+                            <h3 class="onboard-img-title">🏋️ Oceanic Fitness</h3>
+                            <p>State-of-the-art fitness center overlooking the ocean.</p>
+                        </td>
+                        <td>
+                            <img src="./img/oceanic_pool.jpg" alt="">
+                            <h3 class="onboard-img-title">🏋️ Oceanic Fitness</h3>
+                            <p>State-of-the-art fitness center overlooking the ocean.</p>
+                        </td>
+                        <td>
+                            <img src="./img/ocean_spa.jpg" alt="">
+                            <h3 class="onboard-img-title">🏋️ Oceanic Fitness</h3>
+                            <p>State-of-the-art fitness center overlooking the ocean.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="cruise-package-section">
+            <h1 class="cruise-package-title">🥂 CRUISE PACKAGES</h1>
+            <p class="cruise-package-des">Select your perfect voyage</p>
+            <table border="1" cellspacing="0" frame="void" class="cruise-package-table">
+                <tbody>
+                    <tr>
+                        <th>Package</th>
+                        <th>Duration</th>
+                        <th>Includes</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td>Explorer</td>
+                        <td>5 Nights</td>
+                        <td>Cabin + Meals</td>
+                        <td>₹75,000</td>
+                    </tr>
+                    <tr>
+                        <td>Voyager</td>
+                        <td>7 Nights</td>
+                        <td>Suite + Meals + Spa</td>
+                        <td>₹1,25,000</td>
+                    </tr>
+                    <tr>
+                        <td>Royal</td>
+                        <td>10 Nights</td>
+                        <td>Premium Suite + All Experiences</td>
+                        <td>₹2,10,000</td>
+                    </tr>
+                    <tr >
+                        <td id="cruise-offer" colspan="4"><h3>🎁 EARLY BOOKING OFFER — SAVE 20%</h3></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>  
+    </main>
+    <footer>
+        <h1>OCEANIC</h1>
+        <p>Luxury Beyond The Horizon</p>
+        <p>© 2026 Oceanic Cruises</p>
+    </footer>
+</body>
+
+</html>

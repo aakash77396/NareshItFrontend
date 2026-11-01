@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #FAF7F2;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            margin: 0px 250px;
+            height: 100vh;
+            box-shadow: 1px 1px 10px gray;
+        }
+
+        .left {
+            width: 40%;
+            background-color: #8B5E3C;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            color: white;
+        }
+
+        .left img {
+            width: 100%;
+            height: 500px;
+            padding: 25px;
+            object-fit: cover;
+            border-radius: 40px;
+        }
+
+        .left h1 {
+            text-align: center;
+
+        }
+
+        .left p {
+            text-align: center;
+            padding: 15px 0px;
+            font-size: 18px;
+        }
+
+        .right {
+            width: 60%;
+            background-color: #fff;
+        }
+
+        .right h2 {
+            text-align: center;
+            color: #6B4423;
+            padding-top: 25px;
+            padding-bottom: 15px;
+        }
+
+        .right form {
+            padding: 0px 30px;
+        }
+
+        .right form p {
+            font-weight: bold;
+            padding-top: 20px;
+            padding-bottom: 3px;
+        }
+
+        .right form input {
+            width: 100%;
+            border-radius: 5px;
+            padding: 12px 10px;
+            border: 1px solid #8b5e3c54;
+            font-size: 15px;
+        }
+
+        .right form button {
+            width: 100%;
+            color: white;
+            background-color: #A4714A;
+            padding: 10px 0px;
+            text-align: center;
+            border: 1px solid #8b5e3c54;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="./public/img/puppy-6.jpg" alt="">
+            <h1>🐾 HAPPY PAWS</h1>
+            <p>Find Your Forever Friend ❤️
+                <br>
+                <br>
+                Love • Care • Adopt
+            </p>
+        </div>
+        <div class="right">
+            <h2>Pet Adoption Registration</h2>
+            <form action="pet.jsp" method="post">
+                <p>Adopter Name</p>
+                <input type="text" name="name" value="" placeholder="Enter Your Name">
+                <p>Create Password</p>
+                <input type="password" name="password" value="" placeholder="Create Password">
+                <p>Email Address</p>
+                <input type="email" name="email" value="" placeholder="Enter Email">
+                <p>Instagram Profile</p>
+                <input type="url" name="instagram" value="" placeholder="https://instagram.com/username">
+                <p>Preferred Pet</p>
+                <input type="text" name="petType" list="petlist" value="" placeholder="Search Your Pet">
+                <datalist id="petlist">
+                    <option value="Golden Retriver">Golden Retriver</option>
+                    <option value="Labradar">Labradar</option>
+                    <option value="Beagle">Beagle</option>
+                    <option value="German Shepherd">German Shepherd</option>
+                    <option value="Rabbit">Rabbit</option>
+                </datalist>
+                <p>Home Size (Sq.ft)</p>
+                <input type="text" name="size" value="800">
+                <p>Application ID</p>
+                <input type="text" name="ApplicationId" value="ADP2026" readonly>
+                <p>Application Status</p>
+                <input type="text" name="status" value="Pending Verification" disabled>
+                <button>🐾 Adopt Now</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

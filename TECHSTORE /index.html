@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #E6F0FF;
+        }
+        main{
+            padding-top: 30px;
+            margin-bottom: 30px;
+
+        }
+        form{
+            margin: 0px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 1px 1px 10px  gray;
+            width: 450px;
+            padding: 25px 25px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .form-header h1{
+            color: #0B63CE;
+            text-align: center;
+        }
+        .form-header h3{
+            padding: 15px 0px;
+            text-align: center;
+            color: #808080;
+        }
+        .form-input{
+            padding: 5px 0px;
+        }
+        .form-input input{
+            padding: 10px;
+            width: 100%;
+            margin: 5px 0px;
+        }
+        .input-name{
+            color: rgb(31, 30, 30);
+        }
+        .register{
+            background-color: #0B63CE;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            width: 100%;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form  action="./register.jsp" method="post" novalidate>
+            <div class="form-header">
+                <h1>TECHSTORE</h1>
+                <h3>Vendor Registration Portal</h3>
+            </div>
+            <div class="form-body">
+                <div class="form-input">
+                    <strong class="input-name">Vendor Name</strong><br>
+                    <input type="text" placeholder="Enter Vendor Name">
+                </div>
+                <div class="form-input">
+                    <strong class="input-name">Password</strong><br>
+                    <input type="password" placeholder="Enter Password">
+                </div>
+                <div class="form-input">
+                    <strong class="input-name">Business Email</strong><br>
+                    <input type="email" placeholder="Business Email">
+                </div>
+                <div class="form-input">
+                    <strong class="input-name">Company Website</strong><br>
+                    <input type="url" placeholder="https://www.example.com">
+                </div>
+                <div class="form-input">
+                    <strong class="input-name">Search Products</strong><br>
+                    <input type="search" list="products" placeholder="Search Products">
+                    <datalist id="products">
+                        <option value="Mobiles">Mobiles</option>
+                        <option value="Laptop">Laptop</option>
+                        <option value="Headphones">Headphones</option>
+                        <option value="Gaming">Gaming</option>
+                    </datalist>
+                </div>
+                <div class="form-input">
+                    <strong class="input-name">Quantity</strong><br>
+                    <input type="text" value="1" size="4">
+                </div>
+                <div class="form-input">
+                    <strong class="input-name">Vendor ID</strong><br>
+                    <input type="text" value="TV1024" readonly>
+                </div>
+                <div class="form-input">
+                    <strong class="input-name">GST Number</strong><br>
+                    <input type="text" value="29ABCDE1234F1Z5" disabled>
+                </div>
+                <button class="register">Register Vendor</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

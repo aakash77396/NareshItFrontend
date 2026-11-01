@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HyperLink</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .hyperlink{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #96c76a;
+        }
+        h1{
+            padding: 15px 0px;
+        }
+        small{
+            padding: 15px 0px;
+        }
+        h2{
+            padding: 15px 0px;
+        }
+        .m1{
+            color: blue;
+        }
+        .vist:visited{
+            color: blueviolet;
+        }
+        .imgTag{
+            margin-top: 100px;
+            background-color: #4f6e98;
+        }
+        .imgTag h1{
+            padding: 15px 5px;
+        }
+        .imgTag ul{
+            display: flex;
+            flex-direction: row;
+            padding: 15px 5px;
+            list-style: none;
+        }
+        .imgTag ul li{
+            border-right: 1px solid blueviolet;
+            margin-right: 10px;
+            padding: 0px 10px;
+        }
+        .imgTag p{
+            padding: 15px 5px;
+        }
+        .imgTag img{
+            padding: 10px 5px;
+        }
+        .aboutUs{
+            margin-top: 100px;
+            background-color: #9e9d9d;
+        }
+        .aboutUs h1{
+            padding: 15px 5px;
+        }
+        .aboutUs ul{
+            list-style: none;
+            padding: 15px 5px;
+            display: flex;
+            flex-direction: row;
+        }
+        .aboutUs ul li{
+            border-right: 1px solid blueviolet;
+            margin-right: 5px;
+            padding: 5px;
+        }
+        .aboutUs p{
+            padding: 15px 5px;
+        }
+    </style>
+</head>
+<body>
+    <section class="hyperlink">
+        <h1>Welcome to naresh IT</h1>
+        <small>this is the demonstration of hyperlinks to nevigate through the different Page</small>
+        <h2><a href="https://www.google.com" class="m1">Google</a></h2>
+        <small>click on the above link to open google search</small>
+        <h2><a href="https://www.bing.com" class="vist">Microsoft Bing</a></h2>
+        <small>click on the above link to open Bing search</small>
+        <h2><a href="https://nareshit.in/" class="vist">Nareshit.com</a></h2>
+        <small>click the above link to open Nareshit website</small>
+    </section>
+
+    <section class="imgTag">
+        <h1>Welcome to The Home page</h1>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+        </ul>
+        <p>This is the home page of our website. Use the navigation links above to explore other pages.</p>
+        <p>Click on this image below to see more detais:</p>
+        <img src="https://imgs.search.brave.com/2utZQE36Oo1N-KPBxEIprK36-s9ALr3Tmj27lxU7jUw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMDgv/OTIwLzEwNi9zbWFs/bC9jbG9zZXVwLW5h/dHVyZS12aWV3LW9m/LXRyZWUtdG9wLWdy/ZWVuLWxlYWYtaW4t/Z2FyZGVuLWF0LXN1/bW1lci11bmRlci1z/dW5saWdodC1uYXR1/cmFsLWdyZWVuLXBs/YW50cy1sYW5kc2Nh/cGUtdXNpbmctYXMt/YS1iYWNrZ3JvdW5k/LW9yLXdhbGxwYXBl/ci1mcmVlLXBob3Rv/LmpwZw" alt="" width="20%">
+    </section>
+
+    <section class="aboutUs">
+        <h1>About Us</h1>
+        <ul>
+            <li><a href="">Go back to HomePage</a></li>
+            <li><a href="">About</a></li>
+        </ul>
+        <p>This page provides information about our website</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero rem eum libero obcaecati error ut, dolores magnam quas dicta non natus hic placeat cumque unde sapiente! Voluptas eos quidem harum?
+        Et rem illo exercitationem corrupti aliquam, facilis quod odit, neque laboriosam eum vitae labore velit odio dolorum voluptates! Neque iure qui nam sequi provident, quas perspiciatis earum ratione praesentium. Expedita?
+        Perferendis praesentium iste cum laborum tenetur nam minus? Quisquam nulla, impedit ad eveniet doloremque reiciendis praesentium maiores illo ducimus, nostrum voluptates deserunt ipsam quidem quod aliquam enim saepe cumque iusto.</p>
+    </section>
+
+    <section class="imgTag">
+        <h1>Welcome to The Home page</h1>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+        </ul>
+        <p>This is the home page of our website. Use the navigation links above to explore other pages.</p>
+        <p>Click on this image below to see more detais:</p>
+        <img src="https://imgs.search.brave.com/2utZQE36Oo1N-KPBxEIprK36-s9ALr3Tmj27lxU7jUw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMDgv/OTIwLzEwNi9zbWFs/bC9jbG9zZXVwLW5h/dHVyZS12aWV3LW9m/LXRyZWUtdG9wLWdy/ZWVuLWxlYWYtaW4t/Z2FyZGVuLWF0LXN1/bW1lci11bmRlci1z/dW5saWdodC1uYXR1/cmFsLWdyZWVuLXBs/YW50cy1sYW5kc2Nh/cGUtdXNpbmctYXMt/YS1iYWNrZ3JvdW5k/LW9yLXdhbGxwYXBl/ci1mcmVlLXBob3Rv/LmpwZw" alt="" width="20%">
+        <p>Description: This is a simple image used to demonstrate navigation another pages using image as a link(You can write the Description of the image her.)</p>
+    </section>
+</body>
+</html>

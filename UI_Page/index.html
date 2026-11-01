@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        nav{
+            background-color: #1e7adc5f;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 70px;
+            margin: 0px 300px;
+        }
+        nav ul{
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            padding: 15px 120px;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        nav ul li{
+            font-weight: 300px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        nav ul li a{
+            text-decoration: none;
+            /* color: #1768bd; */
+            text-align: center;
+            font-weight: bold;
+            color: black;
+            padding: 10px 25px;
+
+        }
+
+        #nav-items li a:hover{
+            background-color: #1768bd;
+            color: white;
+            border-radius: 10px;
+        }
+        .electronics,.kids,.women{
+            border: 1ps solid gray;
+            height: 260px;
+            margin: 10px 300px;
+            background-color: #e0efff;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            
+        }
+        .electronics h2,.kids h2,.women h2{
+            padding: 0px 32px;
+            padding-top: 10px;
+        }
+        .card-box{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .card{
+            background-color: white;
+            width: 250px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        .img-box{
+            width: 250px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+        }
+        .card img{
+            width: 100%;
+            padding: 0px 20px;
+            margin: 0px auto;
+            
+        }
+        .kids{
+            background-color: rgba(255, 192, 203, 0.297);
+        }
+        .women{
+            background-color: rgba(255, 255, 0, 0.209);
+        }
+        .electronics, .kids,.women{
+            display: none;
+        }
+        .electronics:target,
+        .kids:target,
+        .women:target{
+            display: block;
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul id="nav-items">
+            <li class="nav-items"><a href="#electronics">Electronics</a></li>
+            <li class="nav-items"><a href="#kids">Kids Fashion</a></li>
+            <li class="nav-items"><a href="#women">Women Fashion</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="electronics" id="electronics">
+            <h2>Electronics</h2>
+            <div class="card-box">
+                <div class="card">
+                    <div class="img-box"><img src="./public/images/laptop_realistic_2.jpg" alt=" "></div>
+                    <div><h4>Laptop</h4>
+                    <p>&#8377; 45,000</p></div>
+                </div>
+                <div class="card">
+                    <div class="img-box"><img src="./public/images/headphone.png" alt=" "></div>
+                    <div><h4>Headphones</h4>
+                    <p>&#8377; 2,999</p></div>
+                </div>
+                <div class="card">
+                    <div class="img-box"><img src="./public/images/smartphone.jpg" alt=" "></div>
+                    <div><h4>Smartphone</h4>
+                    <p>&#8377; 18,999</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="kids" id="kids">
+            <h2>Kids Fashion</h2>
+            <div class="card-box">
+                <div class="card">
+                    <div class="img-box"><img src="./public/images/mens-short-sleeve-t-shirt.jpg" alt=" "></div>
+                    <div><h4>T-Shirt</h4>
+                    <p>&#8377; 499</p></div>
+                </div>
+                <div class="card">
+                    <div class="img-box"><img src="./public/images/casual-men-short-pants.jpg" alt=" "></div>
+                    <div><h4>Shorts</h4>
+                    <p>&#8377; 699</p></div>
+                </div>
+                <div class="card">
+                    <div class="img-box"><img src="./public/images/brown-leather-slip-men-s-shoes-fashion.jpg" alt=" "></div>
+                    <div><h4>Shoes</h4>
+                    <p>&#8377; 12,999</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="women" id="women">
+            <h2>Women Fashion</h2>
+            <div class="card-box">
+                <div class="card">
+                    <div class="img-box"><img src="./public/images/portrait-young-stylish-girl-model-casual-summer-clothes-brown-hat-with-natural-makeup-glasses-isolated.jpg" alt=" "></div>
+                    <div><h4>Dress</h4>
+                    <p>&#8377; 1,299</p></div>
+                </div>
+                <div class="card">
+                    <div class="img-box"><img src="./public/images/color-purple-elegance-woman-luxury.jpg" alt=" "></div>
+                    <div><h4>Handbag</h4>
+                    <p>&#8377; 1,999</p></div>
+                </div>
+                <div class="card">
+                    <div class="img-box"><img src="./public/images/high-heel-shoes (1).jpg" alt=" "></div>
+                    <div><h4>Heels</h4>
+                    <p>&#8377; 1,499</p></div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
