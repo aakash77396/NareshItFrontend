@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+     <style>
+        /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Body */
+        body {
+            background-color: #f1f5f9;
+            padding: 30px 15px;
+            color: #1e293b;
+        }
+
+        /* Main Container */
+        .container {
+            width: 100%;
+            max-width: 750px;
+            margin: auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Heading */
+        h2 {
+            text-align: center;
+            color: #1f7ba0;
+            margin-bottom: 25px;
+            font-size: 28px;
+        }
+
+        /* Fieldset */
+        fieldset {
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+
+        /* Legend */
+        legend {
+            color: #1f7ba0;
+            font-weight: bold;
+            padding: 0px 10px;
+            font-size: 17px;
+        }
+
+        /* Labels */
+        label {
+            display: inline-block;
+            margin-bottom: 8px;
+            font-size: 14px;
+            color: #334155;
+        }
+
+        /* Text, Email, Password, Number, URL, Date */
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        input[type="url"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 11px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            outline: none;
+            font-size: 14px;
+            background-color: white;
+            transition: 0.3s;
+        }
+
+        /* Focus Effect */
+        input:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #1f7ba0;
+            box-shadow: 0px 0px 5px rgba(31, 123, 160, 0.3);
+        }
+
+        /* Radio and Checkbox */
+        input[type="radio"],
+        input[type="checkbox"] {
+            accent-color: #1f7ba0;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+
+        /* Color Picker */
+        input[type="color"] {
+            width: 65px;
+            height: 40px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* File Input */
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px dashed #94a3b8;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        /* Range */
+        input[type="range"] {
+            width: 100%;
+            accent-color: #1f7ba0;
+            cursor: pointer;
+        }
+
+        /* Meter */
+        meter {
+            width: 200px;
+            height: 20px;
+            accent-color: #16a34a;
+        }
+
+        /* Textarea */
+        textarea {
+            resize: vertical;
+        }
+
+        /* Readonly */
+        input[readonly] {
+            background-color: #e2e8f0;
+            cursor: not-allowed;
+        }
+
+        /* Buttons */
+        button {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 6px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        /* Submit Button */
+        button[type="submit"] {
+            background-color: #1f7ba0;
+            color: white;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #155e7b;
+        }
+
+        /* Reset Button */
+        button[type="reset"] {
+            background-color: #e2e8f0;
+            color: #334155;
+            margin-left: 10px;
+        }
+
+        button[type="reset"]:hover {
+            background-color: #cbd5e1;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .container {
+                padding: 18px;
+            }
+
+            h2 {
+                font-size: 23px;
+            }
+
+            fieldset {
+                padding: 15px;
+            }
+
+            meter {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Registration Form</h2>
+
+        <form action="" method="post" enctype="multipart/form-data">
+
+            <!-- Personal Information -->
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <div>
+                    <label for="name"><strong>Name</strong></label><br>
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="email"><strong>Email</strong></label><br>
+                    <input type="email" name="email" id="email" placeholder="Enter Email" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label><strong>Gender</strong></label><br>
+
+                    <input type="radio" name="gender" value="Male" id="male" checked>
+                    <label for="male">Male</label>
+
+                    <input type="radio" name="gender" value="Female" id="female">
+                    <label for="female">Female</label>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="state"><strong>State</strong></label><br>
+
+                    <input type="text" name="state" id="state" list="stateList" placeholder="Select State">
+
+                    <datalist id="stateList">
+                        <option value="Bihar">
+                        <option value="Punjab">
+                        <option value="Uttar Pradesh">
+                        <option value="Maharashtra">
+                        <option value="Delhi">
+                    </datalist>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="color"><strong>Color Picker</strong></label><br>
+                    <input type="color" name="color" id="color" value="#ff00ff">
+                </div>
+            </fieldset>
+
+            <br>
+
+            <!-- Account Information -->
+            <fieldset>
+                <legend>Account Information</legend>
+
+                <div>
+                    <label for="password"><strong>Password</strong></label><br>
+
+                    <input type="password" name="password" id="password" placeholder="Enter Password" required
+                        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,}$"
+                        title="Minimum 8 characters with uppercase, lowercase, number and special character (!@#$%)">
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="github"><strong>GitHub URL</strong></label><br>
+                    <input type="url" name="github" id="github" placeholder="https://github.com/username">
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="terms"><strong>Terms & Conditions</strong></label><br>
+                    <input type="checkbox" name="terms" value="accepted" id="terms" required>
+                    <label for="terms">I Accept Terms & Conditions</label>
+                </div>
+            </fieldset>
+
+            <br>
+
+            <!-- Education Information -->
+            <fieldset>
+                <legend>Education Information</legend>
+
+                <div>
+                    <label for="passingYear"><strong>Passing Year</strong></label><br>
+
+                    <select name="passingYear" id="passingYear" required>
+                        <option value="" selected disabled>Select One</option>
+
+                        <optgroup label="Recent Years">
+                            <option value="2026">2026</option>
+                            <option value="2025">2025</option>
+                            <option value="2024">2024</option>
+                            <option value="2023" disabled>2023</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="resume"><strong>Select Resume</strong></label><br>
+
+                    <input type="file" name="resume" id="resume" accept=".pdf,.doc,.docx">
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="documents"><strong>Select Documents</strong></label><br>
+
+                    <input type="file" name="documents" id="documents" accept=".pdf" multiple>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="date"><strong>Date</strong></label><br>
+
+                    <input type="date" name="date" id="date" min="2026-01-01" max="2026-12-31">
+                </div>
+            </fieldset>
+
+            <br>
+
+            <!-- Payment Information -->
+            <fieldset>
+                <legend>Payment Information</legend>
+
+                <div>
+                    <label for="amount"><strong>Amount</strong></label><br>
+
+                    <input type="number" name="amount" id="amount" min="100" max="1000" step="200">
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="amountRange"><strong>Amount Range</strong></label><br>
+
+                    <input type="range" name="amountRange" id="amountRange" min="10.20" max="100.50" step="0.01"
+                        value="20.90">
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="tax"><strong>Tax</strong></label><br>
+
+                    <input type="text" name="tax" id="tax" value="10%" readonly>
+                </div>
+            </fieldset>
+
+            <br>
+
+            <!-- Additional Information -->
+            <fieldset>
+                <legend>Additional Information</legend>
+
+                <div>
+                    <label for="feedback"><strong>Feedback</strong></label><br>
+
+                    <textarea name="feedback" id="feedback" rows="5" cols="30" minlength="15"
+                        placeholder="Enter Your Feedback"></textarea>
+                </div>
+
+                <div>
+                    <label for="progress">Java Learning Progress:</label>
+
+                    <meter id="progress" min="0" max="100" value="70">
+                        70%
+                    </meter>
+                </div>
+            </fieldset>
+
+            <br>
+
+            <!-- Form Buttons -->
+            <div>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
