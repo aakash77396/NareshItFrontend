@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPACE CAMP</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #EFF5FF;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            background-color: #90AFE7;
+            width: 850px;
+            margin: 40px auto;
+            border-radius: 15px;
+            box-shadow: 1px 1px 10px gray;
+        }
+
+        header {
+            background-color: #4E8EF7;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+        }
+
+        header h1 {
+            text-align: center;
+            padding-top: 35px;
+            padding-bottom: 15px;
+            font-size: 40px;
+            letter-spacing: 3px;
+        }
+
+        header p {
+            text-align: center;
+            padding-bottom: 25px;
+        }
+
+        article {
+            width: 100%;
+            height: 300px;
+        }
+
+        article img {
+            width: 100%;
+            height: 300px;
+            /* object-fit: cover; */
+        }
+
+        form {
+            padding: 0px 30px;
+        }
+
+        .form-area h2 {
+            padding: 25px 0px;
+            text-align: center;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            padding: 5px 0px;
+        }
+
+        form input,
+        form textarea {
+            padding: 12px 8px;
+            border-radius: 7px;
+            border: 1px solid rgba(7, 6, 6, 0.603);
+            width: 385px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            font-size: 15px;
+            margin-right: 15px;
+            background-color: #E8E1DA;
+        }
+        #briefing,
+        #reason {
+            width: 790px;
+        }
+
+        textarea {
+            resize: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        meter {
+            width: 790px;
+            margin-bottom: 15px;
+            height: 20px;
+        }
+
+        #register {
+            width: 790px;
+            padding: 15px 0px;
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 35px;
+            background-color: #1468F5;
+            border-radius: 10px;
+            border: none;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 SPACE CAMP</h1>
+            <p>Reach Beyond the Stars • Train Like an Astronaut</p>
+        </header>
+        <article>
+            <img src="./public/imgs/astronot.jpg" alt="">
+        </article>
+        <div class="form-area">
+            <h2>Explorer Registration Form</h2>
+        </div>
+        <form action="./register.jsp" method="post" >
+            <div class="row">
+                <div class="box">
+                    <label for="name"><strong>Explorer Name</strong></label>
+                    <input type="text" name="name" value="" placeholder="Enter Explorer Name"
+                        pattern="^[A-Z][a-z]{3,14}$" title="First letter must be Capital & rest small" id="name"
+                        required autofocus>
+                        <title>First letter must be Capital & rest small</title>
+                </div>
+                <div class="box">
+                    <label for="password"><strong>Password</strong></label>
+                    <input type="password" name="password" value="" placeholder="Create Password"
+                        pattern="^(?=.*[A-Z])(?=.*[0-9])(?=.*[\W])[\w\W]{8,15}$"
+                        title="atleast one Capital letter one number one special char." id="password" required
+                        autofocus>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="box">
+                    <label for="age"><strong>Age</strong></label>
+                    <input type="number" name="age" value="18" id="age" required autofocus>
+                </div>
+                <div class="box">
+                    <label for="score"><strong>Fitness Score</strong></label>
+                    <input type="range" min="10" max="100" value="70" name="score" id="score" required autofocus>
+                </div>
+            </div>
+            <div class="row">
+                <div class="box">
+                    <label for="date"><strong>Camp Date</strong></label>
+                    <input type="date" name="date" id="date" required autofocus>
+                </div>
+                <div class="box">
+                    <label for="time"><strong>Reporting Time</strong></label>
+                    <input type="time" name="time" id="time" required autofocus>
+                </div>
+            </div>
+            <div class="row">
+                <div class="box">
+                    <label for="briefing"><strong>Mission Briefing</strong></label>
+                    <input type="datetime-local" name="briefing" id="briefing" required autofocus>
+                </div>
+            </div>
+            <div class="row">
+                <div class="box">
+                    <label for="color"><strong>Preferred Suit Color</strong></label>
+                    <input type="color" name="color" id="color" value="#ff00ff" required autofocus>
+                </div>
+                <div class="box">
+                    <label for="id_card"><strong>Upload ID Card</strong></label>
+                    <input type="file" accept=".pdf" name="id_card" id="id_card" required autofocus>
+                </div>
+            </div>
+            <div class="row">
+                <div class="box">
+                    <label for="reason"><strong>Why do you want to become an Astronaut?</strong></label>
+                    <textarea name="reason" id="reason" placeholder="Write your answer here..." rows="5"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="box">
+                    <label for="fitness"><strong>Medical Fitness</strong></label>
+                    <meter name="fitness" id="fitness" min="0" max="100" value="82" low="42" high="80"></meter>
+                </div>
+            </div>
+            <div class="row">
+                <div class="box">
+                    <label for="process"><strong>Registration Progress</strong></label>
+                    <meter name="process" id="process" min="0" max="100" value="62" low="42" high="80"></meter>
+                </div>
+            </div>
+            <div class="row">
+                <div class="box">
+                    <button id="register">🚀 Register Mission</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
