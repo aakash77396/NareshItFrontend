@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Membership Portal</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #F6F7FA;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            width: 500px;
+            background-color: #FFFFFF;
+            margin: 30px auto;
+            box-shadow: 1px 1px 10px gray;
+            border-radius: 10px;
+        }
+
+        .container h1 {
+            text-align: center;
+            padding: 25px;
+        }
+
+        .header-img-box {
+            position: relative;
+            width: 100%;
+            padding: 0px 25px;
+        }
+
+        .header-img-box img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            box-shadow: 1px 1px 10px black;
+            border-radius: 15px;
+        }
+
+        .container form {
+            padding: 25px 25px;
+            color: #374151;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .row input,
+        .row select,
+        .row textarea {
+            margin-top: 5px;
+            margin-bottom: 20px;
+            padding: 10px 8px;
+            font-size: 15px;
+            border-radius: 5px;
+            border: 1px solid rgba(128, 128, 128, 0.487);
+            background-color: #F9FAFB;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .gender {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .gender-clm {
+            margin-right: 20px;
+            margin-top: 15px;
+        }
+
+        .fitness-goals {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .fitness-goals-clm {
+            margin-right: 20px;
+            margin-top: 15px;
+        }
+        #color{
+            width: 100%;
+        }
+        textarea{
+            resize: none;
+        }
+        .row meter{
+            width: 100%;
+            height: 20px;
+            margin: 15px 0px;
+        }
+        .row progress{
+            width: 100%;
+            height: 20px;
+            margin: 15px 0px;
+            margin-bottom: 35px;
+        }
+        .join-now{
+            border-top: 1px solid gray;
+            padding-top: 40px;
+            padding-bottom: 15px;
+        }
+        .join-now button[type="submit"]{
+            padding: 12px 0px;
+            text-align: center;
+            background-color: #2663EB;
+            font-size: 18px;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+        }
+        .reset button[type="reset"]{
+            padding: 12px 0px;
+            text-align: center;
+            background-color: #EF4444;
+            font-size: 18px;
+            border-radius: 6px;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>🏋️ Gym Membership Portal</h1>
+            <div class="header-img-box">
+                <img src="./public/imgs/Gym.jpg" alt="">
+            </div>
+        </header>
+        <form action="">
+            <div class="row">
+                <label for="name"><strong>Member Name</strong></label>
+                <input type="text" name="name" id="name" placeholder="Member Name" pattern="^[A-Z][a-z]{3,14}$"
+                    title="First letter uppercase, min length 4" required autofocus>
+            </div>
+            <div class="row">
+                <label for="password"><strong>Password</strong></label>
+                <input type="password" name="password" id="password" placeholder="Enter Password"
+                    pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[\w\W]){8,15}"
+                    title="Pass must be one upercase, one lowercase, one number, one special char" required autofocus>
+            </div>
+            <div class="row">
+                <label><strong>Gender</strong></label>
+                <div class="gender">
+                    <div class="gender-clm">
+                        <input type="radio" name="gender" id="male" value="Male"  checked>
+                        <label for="male"><strong>Male</strong></label>
+                    </div>
+                    <div class="gender-clm">
+                        <input type="radio" name="gender" id="female" value="Female" >
+                        <label for="female"><strong>Female</strong></label>
+                    </div>
+                    <div class="gender-clm">
+                        <input type="radio" name="gender" id="other" value="Other" >
+                        <label for="other"><strong>Other</strong></label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <label><strong>Fitness Goals</strong></label>
+                <div class="fitness-goals">
+                    <div class="fitness-row">
+                        <div class="fitness-goals-clm">
+                            <input type="checkbox" name="fitness-goals" id="weightLoss" value="Weight Loss">
+                            <label for="weightLoss"><strong>Weight Loss</strong></label>
+                        </div>
+                        <div class="fitness-goals-clm">
+                            <input type="checkbox" name="fitness-goals" id="muscleGain" value="Muscle Gain">
+                            <label for="muscleGain"><strong>Muscle Gain</strong></label>
+                        </div>
+                    </div>
+                    <div class="fitness-row">
+                        <div class="fitness-goals-clm">
+                            <input type="checkbox" name="fitness-goals" id="strength" value="Strength" >
+                            <label for="strength"><strong>Strength</strong></label>
+                        </div>
+                        <div class="fitness-goals-clm">
+                            <input type="checkbox" name="fitness-goals" id="cardio" value="Cardio" >
+                            <label for="cardio"><strong>Cardio</strong></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <label for="membership"><strong>Membership Plan</strong></label>
+                <select name="membership" id="membership" required>
+                    <option  value="" selected disabled>Select Plan</option>
+                    <option value="Monthly">Monthly</option>
+                    <option value="Quarterly">Quarterly</option>
+                    <option value="Yearly">Yearly</option>
+                </select>
+            </div>
+            <div class="row">
+                <label for="joiningDate"><strong>Joining Date</strong></label>
+                <input type="date" name="joiningDate" id="joiningDate" required>
+            </div>
+            <div class="row">
+                <label for="workoutTime"><strong>Workout Time</strong></label>
+                <input type="time" name="workoutTime" id="workoutTime" required>
+            </div>
+            <div class="row">
+                <label for="color"><strong>Theme Color</strong></label>
+                <input type="color" name="color" id="color" value="#ff00ff" required>
+            </div>
+            <div class="row">
+                <label for="report"><strong>Upload Medical Report</strong></label>
+                <input type="file" accept=".pdf" name="report" id="report" required>
+            </div>
+            <div class="row">
+                <label for="healthNotes"><strong>Health Notes</strong></label>
+                <textarea name="healthNotes" id="healthNotes" rows="5" required placeholder="Enter your health notes..."></textarea>
+            </div>
+            <div class="row">
+                <label for="bmi"><strong>BMI Meter</strong></label>
+                <meter value="40" min="0" max="100" id="bmi"></meter>
+            </div>
+            <div class="row">
+                <label for="registrationProcess"><strong>Registration Progress</strong></label>
+                <progress value="70" min="0" max="100" id="registrationProcess" ></progress>
+            </div>
+            <div class="row join-now">
+                <button type="submit">Join Now</button>
+            </div>
+            <div class="row reset">
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
