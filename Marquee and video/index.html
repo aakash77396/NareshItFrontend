@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marquee</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container marquee{
+            height: 40px;
+            background-color: rgba(255, 0, 0, 0.724);
+            color: white;
+        }
+       video{
+            width: 100%;
+            height: 90vh;
+            object-fit: cover;
+
+        }
+        p{
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <marquee behavior="alternate" direction="right" scrollamount="5" loop="3" >
+            <h1>Hey! Enjoy...</h1>
+        </marquee>
+    </div>
+    <div>
+        <video controls autoplay poster="./imgs/thumbnail.webp" src="./videos/Mahiya (Official Music Video) Badshah x Shreya Ghoshal - Mahiya ft. Avneet Kaur - Badshah (1080p, h264).mp4"></video>
+    </div>
+    <div>
+        <p>🤣🤣🤣🤣🤣🤣🤣🤣</p>
+    </div>
+    <div>
+        <audio controls src="./audio/Gehra Hua - 8K Video  Dhurandhar  Ranveer Singh, Sara A, Shashwat Sachdev, Arijit Singh, Irshad K - Saregama Music.mp3"></audio>
+    </div>
+</body>
+</html>
