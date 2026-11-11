@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #141414;
+            color: white;
+        }
+        .container{
+            width: 90%;
+            margin: 0px auto;
+        }
+        header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        header h1 {
+            text-align: center;
+            padding: 40px 50px;
+            padding-bottom: 25px;
+
+        }
+
+
+        .cards {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 350px;
+            background-color: #222831;
+            margin: 20px auto;
+            border: 1.5px solid #E50815;
+            border-radius: 20px;
+        }
+
+        .title {
+            color: #E50815;
+            text-align: center;
+            padding: 30px 50px;
+            padding-bottom: 10px;
+        }
+
+        .plan {
+            color: #FFFFFF;
+            text-align: center;
+            padding-bottom: 15px;
+        }
+
+        .price {
+            color: #FF5252;
+            text-align: center;
+            padding-bottom: 30px;
+        }
+
+        .card-footer ul {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            padding: 0px 20px;
+        }
+
+        .card-footer ul li {
+            list-style: none;
+            padding: 9px 0px;
+            font-size: 15px;
+            border-bottom: 1px solid rgba(128, 128, 128, 0.428);
+        }
+
+        .card-btn {
+            background-color: #008001;
+            padding: 15px 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 20px 20px;
+            cursor: pointer;
+        }
+        
+        .card-btn:hover{
+            background-color: #008000de;
+        }
+        .popular{
+            background-color: #FFD700;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-align: center;
+            width: 200px;
+            margin: 15px auto;
+            margin-bottom: 0px;
+            margin-top: 30px;
+        } 
+        .popular-card{
+            border: 2px solid #FFD700;
+            box-shadow: 1px 1px 20px #FFD700;
+        }
+
+        .popular-card:hover{
+            box-shadow: none;
+        }
+        
+        @media screen and (min-width:930px){
+            .cards{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+            .card{
+                margin: 15px;
+            }
+            .standard-title{
+                padding-top: 40px;
+                padding-bottom: 30px;
+            }
+            .standard-btn{
+                margin-bottom: 40px;
+            }
+            
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Netflix Subscription Plans</h1>
+        </header>
+        <section class="cards">
+            <div class="card">
+                <div class="card-header">
+                    <h1 class="title">NETFLIX</h1>
+                    <h3 class="plan">Basic Plan</h3>
+                    <h2 class="price">₹199 / Month</h2>
+                </div>
+                <div class="card-footer">
+                    <ul>
+                        <li>✔ HD Quality</li>
+                        <li>✔ Watch on 1 Device</li>
+                        <li>✔ Unlimited Movies</li>
+                        <li>✔ Download Offline</li>
+                        <li>✔ No Cancellation Charges</li>
+                    </ul>
+                </div>
+                <div class="card-btn">Subscribe Now</div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h1 class="title standard-title">NETFLIX</h1>
+                    <h3 class="plan">Standard Plan</h3>
+                    <h2 class="price">₹499 / Month</h2>
+                </div>
+                <div class="card-footer">
+                    <ul>
+                        <li>✔ HD Quality</li>
+                        <li>✔ Watch on 2 Device</li>
+                        <li>✔ Unlimited Movies & Shows</li>
+                        <li>✔ Download Offline</li>
+                        <li>✔ No Cancellation Charges</li>
+                    </ul>
+                </div>
+                <div class="card-btn standard-btn">Subscribe Now</div>
+            </div>
+
+            <div class="card popular-card">
+                <div class="card-header">
+                    <p class="popular">⭐ Most Popular</p>
+                    <h1 class="title">NETFLIX</h1>
+                    <h3 class="plan">Premium Plan</h3>
+                    <h2 class="price">₹649 / Month</h2>
+                </div>
+                <div class="card-footer">
+                    <ul>
+                        <li>✔ Ultra HD (4K)</li>
+                        <li>✔ Watch on 4 Device</li>
+                        <li>✔ Unlimited Movies & TV Shows</li>
+                        <li>✔ Download Offline</li>
+                        <li>✔ Ad-Free Experience</li>
+                        <li>✔ No Cancellation Charges</li>
+                    </ul>
+                </div>
+                <div class="card-btn">Subscribe Now</div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
