@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-top: 200px;
+        }
+        p{
+            padding: 20px 40px;
+            text-align: center;
+            width: 250px;
+            border-radius: 15px;
+            margin: 10px;
+            font-weight: bold;
+        }
+        .Solid{
+            background-color: rgba(255, 192, 203, 0.609);
+            border: 5px solid rgb(255, 2, 2);
+        }
+        .Dashed{
+            background-color: rgba(102, 161, 220, 0.467);
+            border: 5px dashed blue;
+        }
+        .Dotted{
+            background-color: rgba(102, 220, 134, 0.572);
+            border: 5px dotted rgb(3, 102, 9);
+        }
+        .Double{
+            background-color: rgba(204, 102, 220, 0.435);
+            border: 5px double rgb(76, 3, 102);
+        }
+        .Groove{
+            background-color: rgba(220, 214, 102, 0.435);
+            border: 5px groove rgb(228, 220, 9);
+        }
+        .Ridge{
+            background-color: rgba(218, 102, 220, 0.435);
+            border: 5px ridge rgb(228, 9, 199);
+        }
+        .Inset{
+            background-color: rgba(102, 216, 220, 0.435);
+            border: 5px inset rgb(9, 177, 228);
+        }
+        .Outset{
+            background-color: rgba(214, 102, 220, 0.435);
+            border: 5px outset rgb(228, 9, 217);
+        }
+        .None{
+            background-color: rgba(183, 183, 183, 0.435);
+            border: none;
+        }
+        .Hidden{
+            background-color: rgba(203, 210, 246, 0.435);
+            border: 5px hidden rgb(228, 220, 9);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="Solid">Solid Border</p>
+        <p class="Dashed">Dashed Border</p>
+        <p class="Dotted">Dotted Border</p>
+        <p class="Double">Double Border</p>
+        <p class="Groove">Groove Border</p>
+        <p class="Ridge">Ridge Border</p>
+        <p class="Inset">Inset Border</p>
+        <p class="Outset">Outset Border</p>
+        <p class="None">None Border</p>
+        <p class="Hidden">Hidden Border</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+
+            font-family: Arial, Helvetica, sans-serif;
+            min-height: 100vh;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+        }
+
+        nav h1 {
+            padding: 30px 0px;
+        }
+
+        .img {
+            width: 100%;
+            height: 500px;
+            background: url("public/imgs/amazing-bengal-tiger-nature.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-attachment: scroll;
+            overflow: auto;
+        }
+
+        .img h1 {
+            font-size: 60px;
+            color: white;
+            text-shadow: 1px 1px 10px black;
+        }
+
+        .paragraph {
+            background-color: #fff;
+            padding: 50px 40px;
+            line-height: 40px;
+            font-size: 20px;
+        }
+
+        .bg-fixed {
+            width: 100%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 30px;
+            text-shadow: 1px 1px 10px black;
+            background: url("./public/imgs/amazing-bengal-tiger-nature.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            overflow: auto;
+
+        }
+
+        footer {
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        footer h2 {
+            padding-bottom: 40px;
+        }
+
+        .footer-box {
+            width: 800px;
+            height: 350px;
+            border: 5px solid black;
+            background: url("./public/imgs/amazing-bengal-tiger-nature.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-bottom: 30px;
+            padding: 30px 40px;
+            font-size: 20px;
+            color: white;
+            line-height: 40px;
+            overflow: auto;
+        }
+        .footer-bg-fixed{
+            width: 100%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 30px;
+            text-shadow: 1px 1px 10px black;
+            background: url("./public/imgs/cute-doe-grazing-green-meadow-generated-by-ai.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <h1>CSS Background Attachment</h1>
+            </nav>
+            <section class="img">
+                <h1>background-attachment: scroll</h1>
+            </section>
+        </header>
+        <section class="paragraph">
+            The default value of <b>background-attachment</b> is <b>scroll</b>. The background image moves together with
+            the page
+            whenever the user scrolls.
+
+            Both the text and the background image scroll at the same speed. The image always stays attached to the
+            element itself.
+
+            This behaviour is commonly used for normal website sections where no special scrolling effect is required.
+
+            Since this is the default behaviour, you usually don't need to write <b>background-attachment: scroll;</b>
+            unless
+            you want to make it explicit.
+        </section>
+        <section class="bg-fixed">
+            <h1>background-attachment: fixed</h1>
+        </section>
+        <section class="paragraph">
+            The <b>background-attachment: fixed</b> property keeps the background image fixed relative to the browser
+            window.
+
+            When the user scrolls the page, the content moves, but the background image remains in the same position,
+            creating a parallax-like scrolling effect.
+
+            This effect is commonly used in landing pages, travel websites, portfolios, and modern UI designs to make
+            sections more attractive.
+
+            Be careful while using fixed backgrounds because some mobile browsers may not fully support this behaviour.
+        </section>
+        <footer>
+            <h2>background-attachment: local</h2>
+            <div class="footer-box">
+                The <b>background-attachment: local</b> property makes the background image scroll together with the
+                content
+                inside this container.
+
+                This property works only when the element has its own scrolling area using <b>overflow: auto</b> or
+                <b>overflow:
+                    scroll.</b>
+
+                As you scroll inside this box, both the text and the background image move together.
+
+                Unlike fixed, the image is not attached to the browser window. Unlike scroll, it responds only to the
+                scrolling inside this container.
+
+                Local backgrounds are useful for scrollable cards, chat windows, documentation panels, and other
+                containers with internal scrolling.
+
+                Keep scrolling inside this box to clearly observe how the background moves along with the content.
+
+                This behaviour provides a better user experience when a section contains a large amount of content
+                inside a fixed-height container.
+
+                Try comparing all three values — <b>scroll, fixed, and local</b> — to understand the difference in
+                background
+                movement.
+            </div>
+            <section class="footer-bg-fixed">
+                <h1>background-attachment: fixed</h1>
+            </section>
+            <section class="paragraph">
+                The <b>background-attachment: fixed</b> property keeps the background image fixed relative to the
+                browser
+                window.
+
+                When the user scrolls the page, the content moves, but the background image remains in the same
+                position,
+                creating a parallax-like scrolling effect.
+
+                This effect is commonly used in landing pages, travel websites, portfolios, and modern UI designs to
+                make
+                sections more attractive.
+
+                Be careful while using fixed backgrounds because some mobile browsers may not fully support this
+                behaviour.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eos perspiciatis reprehenderit sunt, nostrum laborum. Dolorem nostrum expedita blanditiis atque fugiat, id quaerat numquam eaque provident nulla maxime possimus. Tempore?
+                Pariatur delectus nisi, vel explicabo blanditiis quibusdam unde, esse eum, deleniti tenetur laborum odit recusandae ipsam modi laudantium saepe quo corrupti odio nemo laboriosam repellendus quam sit. Ea, quidem ut!
+            </section>
+        </footer>
+    </div>
+</body>
+
+</html>
