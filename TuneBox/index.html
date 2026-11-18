@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuneBox Music Player</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #10101C;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav {
+            background-color: #1B1B2E;
+            padding: 25px 20px;
+            color: white;
+            margin: 25px;
+            border-radius: 15px;
+        }
+
+        nav h1 {
+            padding-bottom: 15px;
+            color: #BD91FF;
+        }
+
+        nav ul {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.813);
+        }
+
+        .searchbox{
+            padding: 0px 20px;
+        }
+
+        .searchbox input{
+            padding: 15px 8px;
+            width: 100%;
+            background-color: #1B1B2E;
+            border: 1.5px solid #393950;
+            border-radius: 10px;
+        }
+        .music-mood{
+            padding: 20px 30px;
+            background-color: #25213D;
+            color: white;
+            margin: 25px 20px;
+            border-radius: 10px;
+            transition: background-color 0.8s;
+        }
+
+        .music-mood:hover{
+            /* animation: ani 1s   ; */
+            background-color: #3c3273;
+            
+        }
+
+        /* @keyframes ani{
+            0%{
+                background-color: #25213D;
+            }
+            100%{
+                background-color: #322a61;
+            }
+        } */
+
+        .music-mood h2{
+            padding: 10px 0px;
+        }
+        .music-mood p {
+            padding-bottom: 15px;
+            color: rgba(255, 255, 255, 0.599);
+        }
+
+        .music-mood button{
+            font-weight: bold;
+            padding: 12px 25px;
+            border-radius: 40px;
+            color: white;
+            background-color: #9B6DFF;
+            border: none;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            transition: all 0.4s;
+        }
+        .music-mood button:hover{
+            background-color: #fff;
+            color: #9B6DFF;
+        }
+       #play{
+            font-size: 20px;
+        }
+
+        main{
+            color: white;
+            padding: 15px 20px;
+        }
+        .cards{
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            margin: 30px 30px;
+        }
+        .card{
+            background-color: #1B1B2E;
+            padding: 25px 30px;
+            margin: 10px;
+            border-radius: 15px;
+            display: grid;
+            grid-template-columns: 2fr 8fr 2fr;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.4s;
+            border: 1px solid rgba(128, 128, 128, 0.251);
+        }
+        .card:hover{
+            background-color: #2A2640;
+            border: 1px solid #9B6DFF;
+        }
+        .card-icon{
+            font-size: 30px;
+        }
+        .small-text{
+            color: whitesmoke;
+            padding: 8px 0px;
+            font-size: 13px;
+        }
+        .card-play-btn{
+            background-color: #9B6DFF;
+            width: 45px;
+            height: 40px;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.4s;
+        }
+        .card-play-btn:hover{
+            background-color: #fff;
+            color: #9B6DFF;
+        }
+        footer{
+            background-color: #25213D;
+            color: white;
+            margin: 0px 25px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            padding: 15px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        footer p{
+            padding: 10px 0px;
+            color: rgba(245, 245, 245, 0.695);
+        }
+        .footer-play{
+            font-weight: bold;
+            padding: 10px 23px;
+            border-radius: 40px;
+            color: white;
+            background-color: #9B6DFF;
+            border: none;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            transition: all 0.4s;
+
+        }
+        .footer-play:hover{
+            background-color: #fff;
+            color: #9B6DFF;
+            cursor: pointer;
+        }
+        .bi-play-fill{
+            font-size: 20px;
+        }
+
+        @media screen and (max-width:700px){
+            .cards{
+                grid-template-columns: 12fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>🎧 TuneBox</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#discover">Discover</a></li>
+                <li><a href="#playlist">My Playlist</a></li>
+            </ul>
+        </nav>
+
+        <section class="searchbox" id="home">
+            <input type="text" placeholder="Search Your fevourite songs...">
+        </section>
+
+        <section class="music-mood" id="discover">
+            <h2>🎵 Music for Your Mood</h2>
+            <p>Discover your next favourite song.</p>
+            <button> <span id="play" class="bi bi-play-fill"></span>Play Featured</button>
+        </section>
+    </header>
+    <main id="playlist">
+        <h2>Your Playlist</h2>
+        <section class="cards">
+            <div class="card">
+                <div class="card-icon">🎸</div>
+                <div>
+                    <h4>Perfect</h4>
+                    <p class="small-text">Ed Sheeran · Romantic</p>
+                </div>
+                <div class="card-play-btn "><span class="bi bi-play-fill"></span></div>
+            </div>
+            <div class="card">
+                <div class="card-icon">⚡</div>
+                <div>
+                    <h4>Believer</h4>
+                    <p class="small-text">Imagine Dragons · Rock</p>
+                </div>
+                <div class="card-play-btn "><span class="bi bi-play-fill"></span></div>
+            </div>
+            <div class="card">
+                <div class="card-icon">🌌</div>
+                <div>
+                    <h4>Faded</h4>
+                    <p class="small-text">Alan Walker · Electronic</p>
+                </div>
+                <div class="card-play-btn "><span class="bi bi-play-fill"></span></div>
+            </div>
+            <div class="card">
+                <div class="card-icon">🌿</div>
+                <div>
+                    <h4>Shape of You</h4>
+                    <p class="small-text">Ed Sheeran · Pop</p>
+                </div>
+                <div class="card-play-btn "><span class="bi bi-play-fill"></span></div>
+            </div>
+            <div class="card">
+                <div class="card-icon">🔥</div>
+                <div>
+                    <h4>On My Way</h4>
+                    <p class="small-text">Alan Walker · Dance</p>
+                </div>
+                <div class="card-play-btn "><span class="bi bi-play-fill"></span></div>
+            </div>
+            <div class="card">
+                <div class="card-icon">🌙</div>
+                <div>
+                    <h4>Night Changes</h4>
+                    <p class="small-text">One Direction · Pop</p>
+                </div>
+                <div class="card-play-btn "><span class="bi bi-play-fill"></span></div>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <p>♫ Now Playing: Select your favourite song</p>
+        <button class="footer-play"> <span class="bi bi-play-fill"></span>Play Music</button>
+    </footer>
+</body>
+
+</html>
