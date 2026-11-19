@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCare</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #F4F7FC;
+        }
+
+        .nav-link {
+            color: rgba(255, 255, 255, 0.666);
+        }
+
+        .nav-link:hover {
+            color: white;
+        }
+
+        .img-box {
+            width: 100%;
+            padding: 10px;
+        }
+
+        .img-box img {
+            width: 100%;
+            height: clamp(35vh, 2vh 100vh);
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: clamp(1.5rem, 5vw, 4rem);
+            font-weight: bold;
+            
+        }
+
+        p {
+            font-size: clamp(7px, 2vw, 15px);
+            color: rgba(0, 0, 0, 0.812);
+            
+        }
+        .hero-container{
+            margin-top: 4rem;
+        }
+        .hero-container-text{
+            padding-top: clamp(3rem,5vw,5rem);
+        }
+       
+        @media screen and (max-width:700px){
+            .hero-container-text{
+                padding-top: clamp(1rem,5vw,2rem);
+            }
+            .hero-container{
+                margin-top: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body class="container-fluid">
+    <nav class="navbar navbar-expand-lg w-100" style="background-color: #0A6FFD;">
+        <div class="container-fluid ">
+            <span class="navbar-brand" style="color: white; font-weight: bold; font-size: 1rem;"><span
+                    class="bi bi-hospital"
+                    style="font-size: 1rem; margin-right: 5px; color: white;"></span>MediCare</span>
+
+            <button data-bs-target="#menu" data-bs-toggle="collapse" class="navbar-toggler">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="navbar-collapse collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="" target="view">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="" target="view">Doctors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="" target="view">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="" target="view">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="d-flex pt-lg-5  hero-container">
+        <div class="hero-container-text d-flex flex-column flex-wrap">
+            <h1 class="pt-2 text-primary">24/7 Healthcare <br> Services</h1>
+            <p>Providing quality treatment with experienced doctors and advanced medical <br> facilities. Your health is our priority.</p>
+            <div class="">
+                <button style="font-size: clamp(0.5rem,5vw, 1.2rem);" class="btn btn-primary btn-sm  rounded rounded-5">Book
+                    Apoinment</button>
+                <button style="font-size: clamp(0.5rem,5vw, 1.2rem);" class="btn btn-sm btn-outline-primary rounded rounded-5">Explore
+                    Service</button>
+            </div>
+        </div>
+        <div style="width: 50%;" class="img-box">
+            <img  class="shadow" src="./public/imgs/image.png" alt="">
+        </div>
+
+    </div>
+
+</body>
+
+</html>
